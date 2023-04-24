@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html>https://github.com/JangGo1010/JangGo1010.github.io/blob/main/1weekchallenge.html
 <html lang="en">
     <head>
         <meta charset='utf-8' />
@@ -18,27 +18,68 @@
     <body>
         <img src="입체.png">
         <h2 >1 WEEK CHALLENGE</h2>
-        <p class="text-align-center">이번주 목표 <br>
-            <a href="https://fastcampus.co.kr/courses/213905/clips/">
-                <div class="button">
-                  Ch 02<br>
-                  404 err page
-               </div>
-            </a>
-            <a href="https://fastcampus.co.kr/me/course">
-              <div class="button">
-                Ch 01<br>
-                Airbnb 복습
-             </div>
-            </a>
-            <a href="https://infoinno.info/category/%EA%B8%80%EC%93%B0%EA%B8%B0/%EC%B1%85%EB%A6%AC%EB%B7%B0">
-              <div class="button">
-                이틀에 한권<br>
-                책읽기
-              </div>
-            </a>
-        </p>
+        <!-- task box 전체 : 지난주 못한 것, 이번주 해야하는 것, 해낸 것  -->
+        <div class="task-box">
+          <!-- 지난주 못한것 -->
+          <div class="laskweek-missing-task">
+            <p class="text-align-center">지난주 못함
+              <a href="https://fastcampus.co.kr/courses/213905/clips/">
+                <div class="button task">
+                  Ch 03<br>
+                  FireWatch
+                </div>
+              </a>
+          </p>
+          </div>
 
+          <!-- 이번주 해야할 것 -->
+          <div class="this-week-task">
+            <p class="text-align-center">이번주 목표
+              <a href="https://fastcampus.co.kr/courses/213905/clips/">
+                <div class="button">
+                  <p class="task-description">저번주 못함</p>
+                  Ch 03<br>
+                  FireWatch
+                </div>
+              </a>
+              <a href="https://www.youtube.com/channel/UCHYZ4CnP27RA2VL1VFHzXMg">
+                <div class="button">
+                  <p class="task-description">esp30 연결, 초음파센서<br>
+                    **약간 노잼 -> 잼나게 만들기 생각</p>
+                  YouTube영상<br>
+                  블로그
+                </div>
+              </a>
+              <a href="https://blog.naver.com/PostList.naver?blogId=brain_folds&from=postList&categoryNo=13&parentCategoryNo=13">
+                <div class="button">
+                  진행중: 초사고 글쓰기
+                </div>
+              </a>
+              
+              <a href="https://blog.naver.com/PostList.naver?blogId=brain_folds&from=postList&categoryNo=13&parentCategoryNo=13">
+                <div class="button">
+                  이틀에 한권 책읽기
+                </div>
+              </a>
+            </p>
+          </div>
+          <!-- 해낸 것 -->
+          <div class="successed-task">
+            <p class="text-align-center">
+              완료목표
+              <a href="">
+                <ul>
+                  <li>글쓰기</li>
+                  <li>1주동안 하루한권 책읽기</li>
+                  <li>Ch1 Airbnb페이지 클론 코딩</li>
+                  <li>Ch2 404page 코딩</li>
+                  <li>YouTube영상,블로그 업로드</li>
+                </ul>
+              </a>
+            </p>
+          </div>
+        </div>
+        
         <!-- calendar 태그 -->
         <div id='calendar-container' style="padding:30px;">
         <div id='calendar'></div>
@@ -108,6 +149,17 @@
                   start: '2023-04-03',
                   end: '2023-04-10'
                 },
+                {
+                  title: 'Ch 02 404 err page',
+                  start: '2023-04-10',
+                  end: '2023-04-17'
+                },
+                {
+                  title: 'YouTube 영상, 블로그 업로드',
+                  start: '2023-04-17',
+                  end: '2023-04-24'
+                }
+                
                 
               ]
             });
