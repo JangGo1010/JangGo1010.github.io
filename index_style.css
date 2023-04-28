@@ -58,7 +58,7 @@ a {
     }
 
 .container {
-    width: 400px;
+    width: 500px;
     height: auto;
     padding: 20px;
     position: relative;
@@ -87,6 +87,8 @@ a {
     text-align: center
 }
 
+
+
 .text-align-center {
     text-align: center;
     margin: 0; /* 기본 마진 제거 */
@@ -113,7 +115,7 @@ a {
     display: flex; /* flex 컨테이너로 설정 */
     justify-content: center; /* 수평 가운데 정렬 */
     align-items: center; /* 수직 가운데 정렬 */
-    
+    text-align: center;
     
 }
 .button:active{
