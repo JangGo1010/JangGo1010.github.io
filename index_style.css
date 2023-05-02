@@ -61,6 +61,16 @@ footer {
 
 }
 
+.img_1{
+  display: inline-block;
+  position: absolute;
+  width: auto;
+  height: 250px;
+  top: 1350px;
+  left: 10%;
+
+}
+
 .container {
   width: 500px;
   height: auto;
@@ -74,14 +84,47 @@ footer {
 
 
 .profile_logo {
-  width: 100px;
-  height: 100px;
+  width: 300px;
+  height: 300px;
   margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .profile_logo img {
   max-width: 100%;
-  height: auto;
+  max-height: 100%;
+}
+
+#arrow-wrapper{
+  text-align: center;
+}
+
+#scroll{
+  font-size: 16px;
+  font-weight: 400;
+  opacity: .6;
+  color: white;
+}
+#down-arrow-icon{
+  width: 33px;
+  animation: upAndDown 1s infinite;
+}
+
+@keyframes upAndDown{
+  0%{
+    transform:translateY(0px);
+  }
+  50%{
+    transform:translateY(-10px);
+  }
+  100%{
+    transform:translateY(0px);
+
+  }
+
 }
 
 
@@ -115,7 +158,7 @@ footer {
   height: 60px;
   background: cadetblue;
   margin: 10px;
-  border: 4px solid black;
+  border: 4px solid rgb(71, 118, 120);
   border-radius: 10px;
 
   display: block;
@@ -124,7 +167,7 @@ footer {
 
   color: white;
 
-  box-shadow: 3px 3px white;
+  box-shadow: -3px -3px rgb(176, 205, 206);
 
   display: flex;
   /* flex 컨테이너로 설정 */
