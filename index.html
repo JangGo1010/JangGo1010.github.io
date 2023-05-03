@@ -12,16 +12,17 @@
   <header>
     <h1>JangGo</h1>
   </header>
-  <img class="img_1" src="내사진.jpg" alt="eating image">
+
   <div class="container">
     <div class="profile_logo">
-      <img src="%EC%9E%85%EC%B2%B4.png">
+      <img class="my-image1" src="내사진.jpg">
+      <h2 class="name">정연수</h2>
+
       <div id="arrow-wrapper">
         <p id="scroll">밑으로 스크롤</p>
         <img id="down-arrow-icon" src="down-arrow.png" alt="down arrow">
       </div>
     </div>
-    <h2 class="name">정연수</h2>
     <ul id="list-item-wrapper">
       <li class="list-item">네이버블로그</li>
       <li class="list-item">생각기록</li>
@@ -49,6 +50,7 @@
       <li class="list-item">만드는거</li>
       <li class="list-item">좋아함</li>
     </ul>
+    <div class="margin-div"> </div>
     <div class="button-wrapper">
       <a href="https://blog.naver.com/infoinno1010" target="_blank">
         <div class="button">
@@ -67,7 +69,6 @@
         </div>
       </a>
     </div>
-    <div class="margin-div"> </div>
     <ul id="list-item-wrapper">
       <li class="list-item">취미생활</li>
       <li class="list-item">블로그</li>
@@ -86,6 +87,7 @@
         </div>
       </a>
     </div>
+    <div class="margin-div"> </div>
     <ul id="list-item-wrapper">
       <li class="list-item">언젠가</li>
       <li class="list-item">올</li>
@@ -103,7 +105,7 @@
         </div>
       </a>
     </div>
-    <div class="margin-div"> </div>
+    <div class="margin-div"></div>
     <ul id="list-item-wrapper">
       <li class="list-item">일주일동안</li>
       <li class="list-item">해야할</li>
@@ -122,6 +124,7 @@
       </a>
     </div>
     <div class="margin-div"> </div>
+
     <ul id="list-item-wrapper">
       <li class="list-item">GPT로</li>
       <li class="list-item">만들어본</li>
@@ -129,8 +132,8 @@
       <li class="list-item">사이트</li>
       <li class="list-item">하루만에</li>
       <li class="list-item">만듦</li>
-      <li class="list-item">GPT최고</li>
-      <li class="list-item"></li>
+      <li class="list-item">GPT</li>
+      <li class="list-item">최고</li>
     </ul>
     <div class="button-wrapper"> 
       <a href="https://janggo1010.github.io/usegpt.html" target="_blank">
@@ -139,23 +142,48 @@
         </div>
       </a>
     </div>
+    <div class="margin-div"></div>
     <div class="margin-div"> </div>
-  </div>
+    <div class="margin-div"> </div>
+
+        
+      <div id="panel1-img">
+        <img id="img-1" src="hi_body.png" alt="my image 1">
+        <img id="img-1" class="img-2" src="hi_right_hand.png" alt="my image 1">
+        <img id="img-1" class="img-3" src="hi_left_hand.png" alt="my image 1">
+      </div>
+
+    </div>
+  
+
+
+
+
+
   <footer>
     <p>&copy; 정연수 PORTFOLIO </p>
   </footer>
+
+
 </body>
 <script>
   const listStyleChangeStartY = 0
-  const listStyleChangeEndY = 2670
+  const listStyleChangeEndY = 4298
+      
+  const startPanel1Img1 = 1142
+  const endPanel1Img1 = 1749
 
   const listItems = document.querySelectorAll('.list-item')
 
   const division = (listStyleChangeEndY - listStyleChangeStartY) / listItems.length
   // 문자 켜지는 부분의 길이 나누기 listItems 개수
 
+  const panel1Img = document.getElementById('panel1-img')
+  const img1 = document.getElementById('img-1')
+
   window.addEventListener("scroll", () => {
 
+    // console.log(window.scrollY)
 
     if (document.getElementById("on")) {
       document.getElementById("on").removeAttribute("id")
@@ -169,9 +197,23 @@
       if (listItems[targetIndex]) listItems[targetIndex].id = "on"
 
     }
+
+    const scrollYBottom = window.scrollY + document.documentElement.clientHeight
+    const panel1ImgBottom = panel1Img.offsetTop + panel1Img.offsetHeight
+    
+    
+
+    // if(scrollYBottom > panel1Img.offsetTop && scrollYBottom < panel1Img.offsetTop + panel1Img.offsetHeight +100 ){
+    //   const translateX = 300 - 300 * (scrollYBottom - panel1Img.offsetTop) /(panel1Img.offsetHeight +100)
+
+    //   img1.style.transform =  `translateX(${translateX}px)`
+
+    // }
+
+
+
   })
 </script>
-
 
 
 </html>
