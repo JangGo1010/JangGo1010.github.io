@@ -13,8 +13,8 @@ body {
 
 /* Header styling */
 header {
-  background-color: #333;
-  color: #fff;
+  background-color: navajowhite;
+  color: #333;
   padding: 20px;
   text-align: center;
 }
@@ -56,15 +56,15 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #333;
-  color: #fff;
+  background-color:navajowhite;
+  color:#333;
   padding: 10px;
   text-align: center;
 }
 
-.my-image1{
-  border-radius: 50%;  
-  width: 150px;
+
+.container-wrapper{
+  background-color:antiquewhite;
 }
 
 .container {
@@ -72,7 +72,7 @@ footer {
   height: auto;
   padding: 20px;
   position: relative;
-  background: black;
+  background: white;
   display: block;
   margin: auto;
 
@@ -81,7 +81,7 @@ footer {
 
 .profile_logo {
   width: 300px;
-  height: 300px;
+  height: auto;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -94,15 +94,21 @@ footer {
   max-height: 100%;
 }
 
+.my-image1{
+  border-radius: 50%;  
+  width: 150px;
+}
+
 #arrow-wrapper{
   text-align: center;
+  
 }
 
 #scroll{
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   opacity: .6;
-  color: white;
+  color: #333;
 }
 #down-arrow-icon{
   width: 33px;
@@ -126,7 +132,7 @@ footer {
 
 
 .name {
-  color: white;
+  color: #333;
   text-align: center
 }
 
@@ -193,11 +199,12 @@ footer {
   display: flex;
   font-size: 48px;
   font-weight: 600;
+  color: white;
 }
 
 
 .list-item#on {
-  color: white;
+  color: #333;
 }
 
 .margin-div{
