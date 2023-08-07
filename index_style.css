@@ -1,3 +1,5 @@
+
+
 div {
   box-sizing: border-box;
 }
@@ -15,8 +17,9 @@ body {
 header {
   background-color: navajowhite;
   color: #333;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
+  
 }
 
 h1 {
@@ -65,16 +68,18 @@ footer {
 
 .container-wrapper{
   background-color:antiquewhite;
+  
 }
 
 .container {
   width: 500px;
   height: auto;
-  padding: 20px;
+  padding: 10px;
   position: relative;
   background: white;
-  display: block;
   margin: auto;
+  display: flex;
+  flex-wrap: wrap;
 
 }
 
@@ -148,6 +153,7 @@ footer {
 
 .button-wrapper {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 15px;
@@ -208,7 +214,7 @@ footer {
 }
 
 .margin-div{
-  height: 100px;
+  height: 150px;
 
 }
 #panel1-img{
@@ -270,4 +276,103 @@ footer {
 .img-3{
   animation: waverighthand 1s infinite;
 
+}
+
+
+#video{
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+}
+
+#video-section{
+  margin-bottom: 1000px;
+}
+
+#fixed-description{
+  margin: 0 auto;
+  /* transform:translateX(-50%); */
+}
+
+
+#fixed-description{
+  margin: 10px auto 0;
+  width: 500px;
+  text-align: right;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+  transform: translateY(300px);
+  opacity: 0;
+}
+
+#bank-beyond{
+  display: flex;
+  justify-content: center;
+}
+
+#bank-beyond-wrapper{
+  height: 500px;
+  background-color: black;
+}
+
+#white-wrapper{
+  position: relative;
+  height: 1000px;
+  background-color: navajowhite;
+  z-index: 1000;
+}
+
+#slider-container{
+  margin: 0 auto;
+  position: relative;
+  width: 300px;
+  padding-top: 80px;
+}
+
+#slider-content-wrapper{
+  overflow-x : scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  /* 중간에 이미지 위치했을 때 해결책    
+  scroll-snap-type: x mandatory;
+  -> 추가 .slider-image{scroll-snap-align: center;}
+*/
+}
+
+#slider-content-wrapper::-webkit-scrollbar{
+  width: 0;
+}
+
+#slider-content{
+  display: flex;
+}
+
+.slider-image{
+  width: 300px;
+  height: 466px;
+  scroll-snap-align: center;
+  /* 있어야하는 요소 #slider-content-wrapper{scroll-snap-type: x mandatory;} */
+}
+
+.slider-button{
+  position: absolute;
+  bottom: -50px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+#left-button{
+  left: 10px;
+}
+
+#right-button{
+  right: 10px;
+}
+
+#slider-index{
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
 }
